@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Get rid of LineageOS repos -->
+    <remove-project name="LineageOS/android" />
+    <remove-project name="LineageOS/android_frameworks_base" />
+    <remove-project name="LineageOS/android_packages_apps_Settings" />
+    <remove-project name="LineageOS/android_vendor_cm" />
+    <remove-project name="LineageOS/cm_platform_sdk" />
+
+    <!-- Add LineageDUI repos -->
+    <project path="android" name="LineageDUI/android" revision="cm-13.0" />
+    <project path="frameworks/base" name="LineageDUI/android_frameworks_base" revision="cm-13.0" />
+    <project path="packages/apps/Settings" name="LineageDUI/android_packages_apps_Settings" revision="cm-13.0" />
+    <project path="vendor/cm" name="LineageDUI/android_vendor_cm" revision="cm-13.0" />
+    <project path="vendor/cmsdk" name="LineageDUI/cm_platform_sdk" revision="cm-13.0" />
+
+    <!-- Add Dirty Unicorns DUI repos -->
+    <project path="external/DUtils" name="LineageDUI/android_external_DUtils" revision="cm-13.0" />
+    <project path="packages/apps/DUI" name="LineageDUI/android_packages_apps_DUI" revision="cm-13.0" />
+
+</manifest>

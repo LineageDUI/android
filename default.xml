@@ -522,4 +522,5 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
 
+  <include name="snippets/dui.xml" />
 </manifest>
