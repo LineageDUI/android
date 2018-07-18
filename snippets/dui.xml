@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Get rid of LineageOS repos -->
+    <remove-project name="LineageOS/android" />
+    <remove-project name="LineageOS/android_frameworks_base" />
+    <remove-project name="LineageOS/android_packages_apps_Settings" />
+    <remove-project name="LineageOS/android_vendor_lineage" />
+
+    <!-- Add LineageDUI repos -->
+    <project path="android" name="LineageDUI/android" revision="lineage-15.1" />
+    <project path="frameworks/base" name="LineageDUI/android_frameworks_base" revision="lineage-15.1" />
+    <project path="packages/apps/Settings" name="LineageDUI/android_packages_apps_Settings" revision="lineage-15.1" />
+    <project path="vendor/lineage" name="LineageDUI/android_vendor_lineage" revision="lineage-15.1" />
+
+    <!-- DUI -->
+    <project path="external/DUI" name="LineageDUI/android_external_DUI" revision="lineage-15.1" />
+    <project path="packages/apps/DUI-Settings" name="LineageDUI/android_packages_apps_DUI-Settings" revision="lineage-15.1" />
+
+</manifest>
